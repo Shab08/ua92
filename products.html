@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive food website design tutorial </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><span class="material-icons">
+headphones
+</span>Melody Mart</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="order.html">order</a>
+    </nav>
+
+</header>
+<section class="home" id="home">
+  <div class="content">
+    <h3>Welcome to the products page! </h3>
+    <p>Here, you'll find a vast collection of albums from the latest and greatest artists, as well as classic and timeless albums that will never go out of style.</p>
+  <p>
+  Whether you're a fan of rock, pop, hip-hop, classical, jazz, or any other genre, our website has something for everyone. Our albums are carefully curated and sourced from all over the world, ensuring that you have access to the best possible selection of music.
+  </p>
+  </div>
+
+</section>
+
+<section class="home" id="home">
+
+
+
+<div class="content">
+  <!--  Shopping cart table wrapper  -->
+  <div id="shopping-cart">
+
+    <button class="btn"><i class="fas fa-shopping-cart"></i>Shopping Cart</button>
+    <a onClick="emptyCart()" class="btn btn-success" id="btnEmpty">Empty Cart</a>
+    <h1>
+    <table class="tbl-cart" cellpadding="10" cellspacing="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th class='text-right' width="10%">Unit Price</th>
+          <th class='text-right' width="5%">Quantity</th>
+          <th class='text-right' width="10%">Sub Total</th>
+        </tr>
+      </thead>
+      <!--  Cart table to load data on "add to cart" action -->
+      <tbody id="cartTableBody">
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="text-right">Total:</td>
+          <td id="itemCount" class="text-right" colspan="2"></td>
+          <td id="totalAmount" class="text-right"></td>
+        </tr>
+      </tfoot>
+    </table>
+    </h1>
+  </div>
+  <!-- Product gallery shell to load HTML from JavaScript code -->
+  <div id="product-grid">
+    <div class="txt-heading">
+      <h1>Products</h1>
+    </div>
+    <div id="product-item-container"></div>
+  </div>
+</div>
+
+</section>
+
+<section class="footer">
+
+    <h1 class="credit"> <h1 class="credit"> Made with ❤️ ©️2023 </h1> </h1>
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

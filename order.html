@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive food website design tutorial </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+  <!-- header section -->
+
+  <header>
+
+      <a href="#" class="logo"><span class="material-icons">
+  headphones
+  </span>Melody Mart</a>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+          <a href="index.html">home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="order.html">order</a>
+      </nav>
+
+  </header>
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Welcome to the orders page! </h3>
+      <p>We're excited to have you on board as a member of our community of music lovers.
+
+Creating an account with us is quick and easy, and will give you access to all the features and benefits of our website. You'll be able to save your favorite albums and merchandise, keep track of your order history, and receive updates on new arrivals and special promotions.</p>
+          <img class="note" src="images/music-note.png" alt="">
+
+
+    </div>
+
+  </section>
+
+    <div class="container">
+      <form autocomplete="off">
+        <h4>Create Your Account</h4>
+        <div class="input-section">
+          <label>First Name <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            id="first-name-input"
+            required
+          />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >First Name Cannot Be Empty</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Last Name <span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Enter Last Name"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Last Name Cannot Be Empty
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="Enter Email" id="email" required />
+          <span id="email-error" class="hide required-color error-message"
+            >Invalid Email</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Cannot Be Empty</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>Phone <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            id="phone"
+            required
+          />
+          <span id="phone-error" class="hide required-color error-message"
+            >Phone Number Should Have 10 Digits</span
+          >
+          <span id="empty-phone" class="hide required-color error-message">
+            Phone cannot be empty
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            id="password"
+            required
+          />
+          <span id="password-error" class="hide required-color error-message">
+            Passwords Should Have Letter, Special symbols, Numbers And Length >=
+            8
+          </span>
+          <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Confirm Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            id="verify-password"
+            placeholder="Confirm Password"
+            required
+          />
+          <span
+            id="verify-password-error"
+            class="hide required-color error-message"
+            >Should Be Same As Previous Password</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password Cannot Be Empty</span
+          >
+        </div>
+        <button id="submit-button">Signup</button>
+      </form>
+    </div>
+
+
+    <section class="footer">
+
+        <h1 class="credit"> <h1 class="credit"> Made with ❤️ ©️2023 </h1> </h1>
+
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    <script src="js/order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </body>
+</html>
